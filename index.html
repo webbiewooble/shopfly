@@ -99,9 +99,9 @@
                 <div class="absolute inset-0 flex items-center justify-center text-center px-4 mt-16">
                     <div class="max-w-3xl text-brand-50">
                         <p class="text-accent font-medium tracking-[0.2em] uppercase text-sm mb-6">Designed for India</p>
-                        <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl mb-6 tracking-tight leading-tight">Elevate Your<br>Everyday.</h1>
+                        <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl mb-6 tracking-tight leading-tight">Sasta Nahi Sabse Achha</h1>
                         <p class="text-lg md:text-xl font-light mb-10 opacity-90 max-w-xl mx-auto">
-                            Premium quality, thoughtfully priced for the modern lifestyle.
+                            Premium quality.
                         </p>
                         <button onclick="document.getElementById('product-grid').scrollIntoView({behavior: 'smooth', block: 'start'})" class="bg-brand-50 text-brand-900 px-10 py-4 rounded-full font-medium tracking-wide hover:bg-white hover:scale-105 transition-all duration-300 shadow-xl">
                             Explore Collection
@@ -633,17 +633,24 @@
             { 
                 id: 1, 
                 name: 'Portable Car Vacuum Cleaner', 
-                price: 2499, 
+                price: 1249, 
+                originalPrice: 2499,
                 image: 'https://m.media-amazon.com/images/I/51xLLJOLsoL._SL1000_.jpg', 
                 category: 'Auto Accessories', 
                 description: 'Keep your car spotless with this high-power portable vacuum cleaner. Designed for deep cleaning, it easily reaches tight corners and under seats.',
                 specs: { 'Brand': 'AutoClean', 'Recommended Uses For Product': 'Car Interior, Upholstery', 'Special Feature': 'Lightweight, HEPA Filter', 'Power Source': 'Corded Electric (12V)', 'Model Name': 'High Power Car Vacuum', 'Included Components': 'Vacuum, Brush Nozzle, Crevice Tube', 'Item Weight': '400 Grams', 'Colour': 'Black', 'Filter Type': 'Washable HEPA', 'Form Factor': 'Handheld' },
-                features: ['🌪️ Strong Suction – High-power motor easily picks up dust, pet hair, and crumbs.', '🔌 12V Car Plug – Plugs directly into your car\'s cigarette lighter port.', '🧹 Multiple Attachments – Includes brush and crevice tools for hard-to-reach areas.', '🧼 Washable Filter – Reusable HEPA filter ensures long-lasting performance.', '🧳 Compact Design – Easy to store in your trunk or under the seat.']
+                features: ['🌪️ Strong Suction – High-power motor easily picks up dust, pet hair, and crumbs.', '🔌 12V Car Plug – Plugs directly into your car\'s cigarette lighter port.', '🧹 Multiple Attachments – Includes brush and crevice tools for hard-to-reach areas.', '🧼 Washable Filter – Reusable HEPA filter ensures long-lasting performance.', '🧳 Compact Design – Easy to store in your trunk or under the seat.'],
+                reviews: [
+                    { user: "Rahul S.", rating: 5, date: "12 Mar 2026", comment: "Amazing suction power! Cleaned my car seats perfectly." },
+                    { user: "Amit K.", rating: 4, date: "05 Mar 2026", comment: "Good product, but the cord could be a bit longer." },
+                    { user: "Priya M.", rating: 5, date: "28 Feb 2026", comment: "Very handy and easy to store in the boot." }
+                ]
             },
             { 
                 id: 2, 
                 name: 'Electric Mini Shaver', 
-                price: 1299, 
+                price: 649, 
+                originalPrice: 1299,
                 image: 'https://m.media-amazon.com/images/I/6123OHKBtlL._SL1500_.jpg', 
                 images: [
                     'https://m.media-amazon.com/images/I/6123OHKBtlL._SL1500_.jpg',
@@ -653,7 +660,11 @@
                 category: 'Personal Care', 
                 description: 'Compact, powerful, and travel-friendly. This electric mini shaver gives you a clean, smooth shave on the go. Perfect for quick touch-ups.',
                 specs: { 'Brand': 'HNOSS HABITAT', 'Recommended Uses For Product': 'Facial Hair', 'Special Feature': 'Rechargeable', 'Power Source': 'Battery Powered', 'Model Name': 'Powerful Mini Electric Shaver', 'Included Components': 'Electric Shaver', 'Item Weight': '150 Grams', 'Colour': 'Black', 'Blade Material': 'Stainless Steel', 'Head Type': 'Rotary' },
-                features: ['⚡ Powerful Shaving Performance – High-speed motor for a smooth, close shave.', '🔋 Rechargeable & Portable – Convenient USB charging for home, car, or travel use.', '🧳 Perfect for Travel – Compact design fits perfectly in your bag or car.', '🎁 Ideal Gift for Men – A thoughtful gift for birthdays, Father’s Day, or any occasion.', '💨 New Upgrade – Latest shaving technology for superior performance and durability.', '🚗 Car-Friendly Design – Shave on the go with an easy-to-carry design.', '✨ Close & Comfortable Shave – Suitable for all skin types, ensuring no irritation.']
+                features: ['⚡ Powerful Shaving Performance – High-speed motor for a smooth, close shave.', '🔋 Rechargeable & Portable – Convenient USB charging for home, car, or travel use.', '🧳 Perfect for Travel – Compact design fits perfectly in your bag or car.', '🎁 Ideal Gift for Men – A thoughtful gift for birthdays, Father’s Day, or any occasion.', '💨 New Upgrade – Latest shaving technology for superior performance and durability.', '🚗 Car-Friendly Design – Shave on the go with an easy-to-carry design.', '✨ Close & Comfortable Shave – Suitable for all skin types, ensuring no irritation.'],
+                reviews: [
+                    { user: "Vikram D.", rating: 5, date: "15 Mar 2026", comment: "Super compact and gives a really clean shave. Perfect for my business trips." },
+                    { user: "Suresh P.", rating: 4, date: "10 Mar 2026", comment: "Battery life is decent. Does the job well." }
+                ]
             },
             { 
                 id: 3, 
@@ -668,12 +679,18 @@
                 category: 'Fitness', 
                 description: 'Tone your muscles and improve flexibility at home. This versatile resistance band peddler is perfect for yoga, pilates, and daily stretching routines.',
                 specs: { 'Brand': 'FitLife', 'Recommended Uses For Product': 'Yoga, Pilates, Stretching', 'Special Feature': 'High Elasticity', 'Material': 'Natural Latex & High-Density Foam', 'Model Name': 'Resistance Band Peddler', 'Included Components': '1 Resistance Peddler', 'Item Weight': '250 Grams', 'Colour': 'Purple/Black', 'Tension Level': 'Medium Resistance', 'Style': '4-Tube Design' },
-                features: ['💪 Full Body Workout – Target your arms, tummy, shoulders, legs, and butt.', '🧘‍♀️ High Elasticity – Premium latex tubes offer high tensile strength and durability.', '🏡 Home Gym Essential – Get a great workout without expensive gym equipment.', '🛡️ Safe & Comfortable – Non-slip foam handles and pedals prevent slipping.', '🧳 Lightweight & Portable – Easy to pack and use anywhere, anytime.']
+                features: ['💪 Full Body Workout – Target your arms, tummy, shoulders, legs, and butt.', '🧘‍♀️ High Elasticity – Premium latex tubes offer high tensile strength and durability.', '🏡 Home Gym Essential – Get a great workout without expensive gym equipment.', '🛡️ Safe & Comfortable – Non-slip foam handles and pedals prevent slipping.', '🧳 Lightweight & Portable – Easy to pack and use anywhere, anytime.'],
+                reviews: [
+                    { user: "Neha G.", rating: 5, date: "14 Mar 2026", comment: "Great for my morning stretches. The resistance is just right." },
+                    { user: "Anjali T.", rating: 5, date: "02 Mar 2026", comment: "Very durable material. I use it daily." },
+                    { user: "Rohan B.", rating: 4, date: "20 Feb 2026", comment: "Good quality, handles are comfortable." }
+                ]
             },
             { 
                 id: 4, 
                 name: 'Fresh Juice Portable Mixer', 
-                price: 1999, 
+                price: 999, 
+                originalPrice: 1999,
                 image: 'https://m.media-amazon.com/images/I/51YzRbZG7WL._SL1000_.jpg', 
                 images: [
                     'https://m.media-amazon.com/images/I/51YzRbZG7WL._SL1000_.jpg',
@@ -683,17 +700,41 @@
                 category: 'Kitchen & Dining', 
                 description: 'Blend fresh smoothies, shakes, and juices anywhere. USB rechargeable, easy to clean, and features powerful stainless steel blades.',
                 specs: { 'Brand': 'BlendGo', 'Recommended Uses For Product': 'Smoothies, Juices, Protein Shakes', 'Special Feature': 'Portable, Self-Cleaning', 'Power Source': 'USB Rechargeable', 'Model Name': 'Fresh Juice Blender', 'Included Components': 'Blender Bottle, USB Cable', 'Item Weight': '450 Grams', 'Colour': 'Pink/White', 'Blade Material': '304 Stainless Steel (6 Blades)', 'Capacity': '380 Millilitres' },
-                features: ['🍓 Blend Anywhere – Make fresh smoothies, protein shakes, and juices on the go.', '🔋 Long Battery Life – Built-in rechargeable battery makes up to 15 cups per charge.', '💧 Easy to Clean – Self-cleaning mode; just add water and a drop of soap, then blend.', '🛡️ Safe Design – Magnetic sensing switch prevents blades from spinning when open.', '⚡ Powerful Motor – 6 sharp stainless steel blades crush ice and frozen fruits easily.']
+                features: ['🍓 Blend Anywhere – Make fresh smoothies, protein shakes, and juices on the go.', '🔋 Long Battery Life – Built-in rechargeable battery makes up to 15 cups per charge.', '💧 Easy to Clean – Self-cleaning mode; just add water and a drop of soap, then blend.', '🛡️ Safe Design – Magnetic sensing switch prevents blades from spinning when open.', '⚡ Powerful Motor – 6 sharp stainless steel blades crush ice and frozen fruits easily.'],
+                reviews: [
+                    { user: "Kavita R.", rating: 5, date: "16 Mar 2026", comment: "I love making my protein shakes in this. So easy to clean!" },
+                    { user: "Deepak S.", rating: 5, date: "11 Mar 2026", comment: "Blends ice effortlessly. Highly recommend." }
+                ]
             },
             { 
                 id: 5, 
                 name: 'Smart Health Band', 
-                price: 2999, 
+                price: 1499, 
+                originalPrice: 2999,
                 image: 'https://picsum.photos/seed/healthband/800/800', 
                 category: 'Electronics', 
                 description: 'Track your steps, heart rate, and sleep patterns. Stay connected with smart notifications right on your wrist. Water-resistant and long battery life.',
                 specs: { 'Brand': 'TechFit', 'Recommended Uses For Product': 'Fitness Tracking, Health Monitoring', 'Special Feature': 'Heart Rate Monitor, Sleep Tracker', 'Power Source': 'Battery Powered', 'Model Name': 'Smart Health Band Pro', 'Included Components': 'Smart Band, Magnetic Charger', 'Item Weight': '24 Grams', 'Colour': 'Midnight Black', 'Water Resistance': '5 ATM (50 Meters)', 'Screen Size': '1.1 Inches AMOLED' },
-                features: ['❤️ 24/7 Heart Rate Monitoring – Keep track of your cardiovascular health all day.', '🩸 SpO2 Tracking – Measure your blood oxygen saturation levels anytime.', '🏃‍♂️ 11 Sports Modes – Accurately track running, cycling, swimming, and more.', '😴 Sleep Analysis – Monitor light, deep, and REM sleep stages for better rest.', '📱 Smart Notifications – Receive calls, texts, and app alerts directly on your wrist.', '🔋 14-Day Battery – Spend less time charging and more time moving.']
+                features: ['❤️ 24/7 Heart Rate Monitoring – Keep track of your cardiovascular health all day.', '🩸 SpO2 Tracking – Measure your blood oxygen saturation levels anytime.', '🏃‍♂️ 11 Sports Modes – Accurately track running, cycling, swimming, and more.', '😴 Sleep Analysis – Monitor light, deep, and REM sleep stages for better rest.', '📱 Smart Notifications – Receive calls, texts, and app alerts directly on your wrist.', '🔋 14-Day Battery – Spend less time charging and more time moving.'],
+                reviews: [
+                    { user: "Manish V.", rating: 4, date: "13 Mar 2026", comment: "Accurate step tracking and the sleep analysis is quite detailed." },
+                    { user: "Sneha L.", rating: 5, date: "08 Mar 2026", comment: "Looks premium and battery lasts forever!" },
+                    { user: "Karan W.", rating: 5, date: "01 Mar 2026", comment: "Best fitness band in this price range." }
+                ]
+            },
+            { 
+                id: 6, 
+                name: 'Posture Corrector', 
+                price: 899, 
+                image: 'https://m.media-amazon.com/images/I/51Et71Q14rL.jpg', 
+                category: 'Health & Wellness', 
+                description: 'Improve your posture and relieve back pain with this adjustable posture corrector. Comfortable to wear under clothing.',
+                specs: { 'Brand': 'HealthPlus', 'Recommended Uses For Product': 'Posture Correction, Back Support', 'Special Feature': 'Adjustable, Breathable', 'Material': 'Neoprene', 'Model Name': 'Pro Posture Corrector', 'Included Components': '1 Posture Corrector', 'Item Weight': '150 Grams', 'Colour': 'Black', 'Size': 'Universal Adjustable' },
+                features: ['🧍‍♂️ Improve Posture – Gently pulls shoulders back to align the spine.', '😌 Relieve Back Pain – Helps reduce upper and lower back pain caused by slouching.', '👕 Invisible Under Clothes – Wear it discreetly at work, home, or the gym.', '🌬️ Breathable Material – Made from lightweight, porous neoprene for comfort.', '⚙️ Fully Adjustable – Fits chest sizes from 28 to 48 inches easily.'],
+                reviews: [
+                    { user: "Arjun M.", rating: 5, date: "17 Mar 2026", comment: "Really helped with my lower back pain from sitting at the desk all day." },
+                    { user: "Pooja C.", rating: 4, date: "09 Mar 2026", comment: "A bit tight at first, but you get used to it. Posture has definitely improved." }
+                ]
             }
         ];
 
@@ -786,7 +827,11 @@
                     <div class="flex flex-col flex-1 px-1">
                         <p class="text-[10px] text-brand-500 uppercase tracking-widest mb-1.5 font-medium">${product.category}</p>
                         <h3 class="font-medium text-brand-900 leading-tight mb-1">${product.name}</h3>
-                        <p class="font-semibold text-brand-900">${formatINR(product.price)}</p>
+                        <div class="flex items-center gap-2">
+                            <p class="font-semibold text-brand-900">${formatINR(product.price)}</p>
+                            ${product.originalPrice ? `<p class="text-sm text-brand-400 line-through">${formatINR(product.originalPrice)}</p>` : ''}
+                        </div>
+                        ${product.originalPrice ? `<p class="text-xs text-emerald-600 font-medium mt-1">Buy 1 Get 1 Free</p>` : ''}
                     </div>
                 </div>
             `;
@@ -997,7 +1042,11 @@
                 <div class="flex flex-col justify-center">
                     <p class="text-sm text-brand-500 uppercase tracking-widest mb-2 font-medium">${product.category}</p>
                     <h1 class="font-serif text-4xl md:text-5xl text-brand-900 mb-4">${product.name}</h1>
-                    <p class="text-2xl font-semibold text-brand-900 mb-6">${formatINR(product.price)}</p>
+                    <div class="flex items-center gap-3 mb-2">
+                        <p class="text-2xl font-semibold text-brand-900">${formatINR(product.price)}</p>
+                        ${product.originalPrice ? `<p class="text-lg text-brand-400 line-through">${formatINR(product.originalPrice)}</p><span class="bg-rose-100 text-rose-600 text-xs font-bold px-2 py-1 rounded">50% OFF</span>` : ''}
+                    </div>
+                    ${product.originalPrice ? `<p class="text-emerald-600 font-medium mb-6 flex items-center gap-2"><i data-lucide="tag" class="w-4 h-4"></i> Buy 1 Get 1 Free on this product!</p>` : ''}
                     <p class="text-brand-700 text-lg leading-relaxed mb-8 font-light">${product.description}</p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 mb-8">
@@ -1021,6 +1070,12 @@
                                 <i data-lucide="banknote" class="w-5 h-5"></i>
                             </div>
                             <span class="text-sm font-medium">Cash on Delivery</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-brand-700 col-span-2 mt-2">
+                            <div class="w-10 h-10 rounded-full bg-brand-50 flex items-center justify-center text-brand-900">
+                                <i data-lucide="refresh-cw" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-sm font-medium">7 Day's Easy Return Policy</span>
                         </div>
                     </div>
 
@@ -1049,6 +1104,30 @@
                                 </li>
                             `).join('')}
                         </ul>
+                    </div>
+                    ` : ''}
+
+                    ${product.reviews ? `
+                    <div class="mt-10 pt-8 border-t border-brand-100">
+                        <h3 class="font-serif text-2xl text-brand-900 mb-6">Customer Reviews</h3>
+                        <div class="space-y-6">
+                            ${product.reviews.map(review => `
+                                <div class="bg-brand-50 p-5 rounded-2xl border border-brand-100">
+                                    <div class="flex justify-between items-start mb-3">
+                                        <div>
+                                            <p class="font-medium text-brand-900">${review.user}</p>
+                                            <p class="text-xs text-brand-500 mt-0.5">${review.date}</p>
+                                        </div>
+                                        <div class="flex gap-0.5 text-amber-400">
+                                            ${Array(5).fill(0).map((_, i) => `
+                                                <i data-lucide="star" class="w-4 h-4 ${i < review.rating ? 'fill-current' : 'text-brand-200'}"></i>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                    <p class="text-brand-700 font-light text-sm leading-relaxed">${review.comment}</p>
+                                </div>
+                            `).join('')}
+                        </div>
                     </div>
                     ` : ''}
                 </div>
